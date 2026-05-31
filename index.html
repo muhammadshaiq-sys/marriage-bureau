@@ -14,24 +14,24 @@
         }
 
         :root {
-            --primary: #C5A059;
-            --primary-dark: #9B7B3E;
-            --primary-light: #E8D5B5;
+            --primary: #C6A155;
+            --primary-dark: #A8883E;
+            --primary-light: #E8D5B0;
             --secondary: #8B3A3A;
             --secondary-dark: #6B2A2A;
             --accent: #2C3E50;
             --dark: #0F172A;
             --dark-bg: #0A0F1D;
-            --light-bg: #F9F9F9;
+            --light-bg: #F8F9FC;
             --card-bg: #FFFFFF;
             --text-primary: #1E293B;
             --text-secondary: #475569;
             --text-muted: #64748B;
-            --border-light: rgba(197, 160, 89, 0.15);
-            --shadow-sm: 0 4px 12px rgba(0, 0, 0, 0.05);
-            --shadow-md: 0 8px 24px rgba(0, 0, 0, 0.08);
-            --shadow-lg: 0 20px 40px rgba(0, 0, 0, 0.12);
-            --shadow-xl: 0 30px 60px rgba(0, 0, 0, 0.15);
+            --border-light: rgba(198, 161, 85, 0.15);
+            --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.04);
+            --shadow-md: 0 4px 16px rgba(0, 0, 0, 0.06);
+            --shadow-lg: 0 8px 32px rgba(0, 0, 0, 0.1);
+            --shadow-xl: 0 20px 48px rgba(0, 0, 0, 0.12);
             --transition: all 0.4s cubic-bezier(0.2, 0.95, 0.4, 1);
         }
 
@@ -58,13 +58,13 @@
             position: absolute;
             width: 100%;
             height: 100%;
-            background: radial-gradient(ellipse at 30% 40%, rgba(197, 160, 89, 0.08), rgba(139, 58, 58, 0.04), rgba(15, 23, 42, 0.02));
-            animation: breatheGradient 12s ease-in-out infinite;
+            background: radial-gradient(ellipse at 30% 40%, rgba(198, 161, 85, 0.06), rgba(139, 58, 58, 0.03), rgba(15, 23, 42, 0.02));
+            animation: breatheGradient 15s ease-in-out infinite;
         }
 
         @keyframes breatheGradient {
-            0%, 100% { opacity: 0.6; transform: scale(1); }
-            50% { opacity: 1; transform: scale(1.05); }
+            0%, 100% { opacity: 0.5; transform: scale(1); }
+            50% { opacity: 1; transform: scale(1.03); }
         }
 
         .moving-wave {
@@ -73,13 +73,13 @@
             left: 0;
             width: 100%;
             height: 100%;
-            background: repeating-linear-gradient(90deg, transparent, transparent 100px, rgba(197, 160, 89, 0.04) 100px, rgba(197, 160, 89, 0.04) 102px);
-            animation: slideWave 30s linear infinite;
+            background: repeating-linear-gradient(90deg, transparent, transparent 120px, rgba(198, 161, 85, 0.03) 120px, rgba(198, 161, 85, 0.03) 122px);
+            animation: slideWave 35s linear infinite;
         }
 
         @keyframes slideWave {
             0% { transform: translateX(0); }
-            100% { transform: translateX(200px); }
+            100% { transform: translateX(250px); }
         }
 
         .floating-particles {
@@ -92,26 +92,26 @@
             position: absolute;
             background: linear-gradient(135deg, var(--primary), var(--secondary));
             border-radius: 50%;
-            opacity: 0.15;
-            filter: blur(8px);
-            animation: floatParticle 20s infinite ease-in-out;
+            opacity: 0.12;
+            filter: blur(10px);
+            animation: floatParticle 25s infinite ease-in-out;
         }
 
         @keyframes floatParticle {
-            0% { transform: translateY(0) translateX(0) scale(1); opacity: 0.05; }
-            50% { transform: translateY(-40px) translateX(20px) scale(1.2); opacity: 0.15; }
-            100% { transform: translateY(0) translateX(0) scale(1); opacity: 0.05; }
+            0% { transform: translateY(0) translateX(0) scale(1); opacity: 0.04; }
+            50% { transform: translateY(-50px) translateX(25px) scale(1.2); opacity: 0.12; }
+            100% { transform: translateY(0) translateX(0) scale(1); opacity: 0.04; }
         }
 
         .rotating-mandala {
             position: absolute;
-            top: 20%;
-            right: -10%;
-            width: 600px;
-            height: 600px;
-            background: radial-gradient(circle, rgba(197, 160, 89, 0.06), transparent 70%);
+            top: 15%;
+            right: -8%;
+            width: 700px;
+            height: 700px;
+            background: radial-gradient(circle, rgba(198, 161, 85, 0.05), transparent 70%);
             border-radius: 50%;
-            animation: rotateMandala 45s linear infinite;
+            animation: rotateMandala 55s linear infinite;
         }
 
         @keyframes rotateMandala {
@@ -123,7 +123,7 @@
             position: absolute;
             width: 100%;
             height: 100%;
-            background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 400 400' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='a'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.8' numOctaves='3'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23a)' opacity='0.015'/%3E%3C/svg%3E");
+            background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 400 400' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='a'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.75' numOctaves='3'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23a)' opacity='0.012'/%3E%3C/svg%3E");
             pointer-events: none;
         }
 
@@ -134,7 +134,7 @@
             left: 0;
             width: 100%;
             background: rgba(255, 255, 255, 0.96);
-            backdrop-filter: blur(20px);
+            backdrop-filter: blur(24px);
             z-index: 1000;
             border-bottom: 1px solid var(--border-light);
             transition: var(--transition);
@@ -177,7 +177,7 @@
 
         .logo:hover .logo-icon {
             transform: scale(1.05) rotate(8deg);
-            box-shadow: 0 8px 20px rgba(197, 160, 89, 0.35);
+            box-shadow: 0 8px 20px rgba(198, 161, 85, 0.35);
         }
 
         .logo-text {
@@ -191,7 +191,7 @@
         }
 
         .logo-badge {
-            font-size: 0.7rem;
+            font-size: 0.65rem;
             color: var(--primary);
             letter-spacing: 1px;
         }
@@ -257,14 +257,8 @@
         }
 
         @keyframes fadeInUp {
-            from {
-                opacity: 0;
-                transform: translateY(40px);
-            }
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
+            from { opacity: 0; transform: translateY(40px); }
+            to { opacity: 1; transform: translateY(0); }
         }
 
         .container {
@@ -282,15 +276,15 @@
         .section-header .subtitle {
             color: var(--primary);
             font-weight: 600;
-            letter-spacing: 3px;
-            font-size: 0.8rem;
+            letter-spacing: 4px;
+            font-size: 0.75rem;
             text-transform: uppercase;
             margin-bottom: 0.75rem;
         }
 
         .section-header h2 {
             font-family: 'Playfair Display', serif;
-            font-size: 2.8rem;
+            font-size: 3rem;
             font-weight: 700;
             color: var(--text-primary);
             margin-bottom: 1rem;
@@ -324,12 +318,12 @@
         .btn-primary {
             background: linear-gradient(135deg, var(--primary), var(--secondary));
             color: white;
-            box-shadow: 0 4px 15px rgba(197, 160, 89, 0.3);
+            box-shadow: 0 4px 15px rgba(198, 161, 85, 0.3);
         }
 
         .btn-primary:hover {
             transform: translateY(-2px);
-            box-shadow: 0 8px 25px rgba(197, 160, 89, 0.4);
+            box-shadow: 0 8px 25px rgba(198, 161, 85, 0.4);
         }
 
         .btn-outline {
@@ -391,10 +385,6 @@
             margin: 2rem 0;
         }
 
-        .hero-stat {
-            text-align: left;
-        }
-
         .hero-stat .number {
             font-size: 1.8rem;
             font-weight: 800;
@@ -416,7 +406,7 @@
             width: 42px;
             height: 42px;
             border-radius: 50%;
-            background: rgba(197, 160, 89, 0.1);
+            background: rgba(198, 161, 85, 0.1);
             display: flex;
             align-items: center;
             justify-content: center;
@@ -482,7 +472,7 @@
 
         .stat-card:hover {
             transform: translateY(-5px);
-            box-shadow: var(--shadow-md);
+            box-shadow: var(--shadow-lg);
             border-color: var(--primary);
         }
 
@@ -515,14 +505,14 @@
 
         .feature-card:hover {
             transform: translateY(-8px);
-            box-shadow: var(--shadow-lg);
+            box-shadow: var(--shadow-xl);
             border-color: var(--primary);
         }
 
         .feature-icon {
             width: 70px;
             height: 70px;
-            background: linear-gradient(135deg, rgba(197, 160, 89, 0.1), rgba(139, 58, 58, 0.08));
+            background: linear-gradient(135deg, rgba(198, 161, 85, 0.1), rgba(139, 58, 58, 0.08));
             border-radius: 20px;
             display: flex;
             align-items: center;
@@ -537,6 +527,185 @@
             transform: scale(1.05);
             background: linear-gradient(135deg, var(--primary), var(--secondary));
             color: white;
+        }
+
+        /* ============ PORTFOLIO/PROJECTS SECTION - PROFESSIONAL & EXTENDED ============ */
+        .portfolio-filter {
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+            margin-bottom: 2.5rem;
+            flex-wrap: wrap;
+        }
+
+        .filter-btn {
+            background: transparent;
+            border: 1px solid var(--border-light);
+            padding: 0.5rem 1.5rem;
+            border-radius: 100px;
+            font-weight: 500;
+            cursor: pointer;
+            transition: var(--transition);
+            color: var(--text-secondary);
+        }
+
+        .filter-btn:hover, .filter-btn.active {
+            background: linear-gradient(135deg, var(--primary), var(--secondary));
+            color: white;
+            border-color: transparent;
+        }
+
+        .portfolio-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 2rem;
+            margin-bottom: 3rem;
+        }
+
+        .portfolio-card {
+            background: var(--card-bg);
+            border-radius: 28px;
+            overflow: hidden;
+            box-shadow: var(--shadow-md);
+            transition: var(--transition);
+        }
+
+        .portfolio-card:hover {
+            transform: translateY(-10px);
+            box-shadow: var(--shadow-xl);
+        }
+
+        .portfolio-image {
+            height: 320px;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .portfolio-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.6s ease;
+        }
+
+        .portfolio-card:hover .portfolio-image img {
+            transform: scale(1.05);
+        }
+
+        .portfolio-image-overlay {
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(to top, rgba(0,0,0,0.6), transparent);
+            opacity: 0;
+            transition: var(--transition);
+            display: flex;
+            align-items: flex-end;
+            justify-content: flex-start;
+            padding: 1.5rem;
+        }
+
+        .portfolio-card:hover .portfolio-image-overlay {
+            opacity: 1;
+        }
+
+        .portfolio-category {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            background: rgba(198, 161, 85, 0.95);
+            color: white;
+            padding: 0.25rem 1rem;
+            border-radius: 100px;
+            font-size: 0.7rem;
+            font-weight: 600;
+            letter-spacing: 1px;
+        }
+
+        .portfolio-content {
+            padding: 1.8rem;
+        }
+
+        .portfolio-title {
+            font-size: 1.4rem;
+            font-weight: 700;
+            margin-bottom: 0.5rem;
+            color: var(--text-primary);
+        }
+
+        .portfolio-meta {
+            display: flex;
+            gap: 1rem;
+            margin-bottom: 1rem;
+            font-size: 0.8rem;
+            color: var(--primary);
+            font-weight: 500;
+        }
+
+        .portfolio-description {
+            color: var(--text-secondary);
+            font-size: 0.9rem;
+            line-height: 1.7;
+            margin-bottom: 1.2rem;
+        }
+
+        .portfolio-stats {
+            display: flex;
+            gap: 1.5rem;
+            margin: 1rem 0;
+            padding: 0.75rem 0;
+            border-top: 1px solid var(--border-light);
+            border-bottom: 1px solid var(--border-light);
+        }
+
+        .portfolio-stat {
+            text-align: center;
+        }
+
+        .portfolio-stat .value {
+            font-weight: 800;
+            color: var(--primary);
+        }
+
+        .portfolio-stat .label {
+            font-size: 0.7rem;
+            color: var(--text-muted);
+        }
+
+        .portfolio-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            color: var(--primary);
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 0.85rem;
+            transition: var(--transition);
+        }
+
+        .portfolio-link:hover {
+            gap: 0.8rem;
+        }
+
+        /* ============ CASE STUDY SECTION ============ */
+        .case-study {
+            background: linear-gradient(135deg, var(--card-bg), #FDF8F0);
+            border-radius: 32px;
+            padding: 2.5rem;
+            margin: 2rem 0;
+            border: 1px solid var(--border-light);
+        }
+
+        .case-study h3 {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.6rem;
+            margin-bottom: 1rem;
+        }
+
+        .case-study-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 2rem;
+            margin-top: 1.5rem;
         }
 
         /* ============ ABOUT SECTION ============ */
@@ -582,69 +751,6 @@
             box-shadow: var(--shadow-sm);
         }
 
-        .milestone-list {
-            list-style: none;
-            margin-top: 1rem;
-        }
-
-        .milestone-list li {
-            padding: 0.5rem 0;
-            display: flex;
-            align-items: center;
-            gap: 0.75rem;
-            color: var(--text-secondary);
-        }
-
-        .milestone-list li i {
-            color: var(--primary);
-            font-size: 1.1rem;
-        }
-
-        /* ============ PORTFOLIO ============ */
-        .portfolio-grid {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: 2rem;
-        }
-
-        .portfolio-card {
-            background: var(--card-bg);
-            border-radius: 24px;
-            overflow: hidden;
-            box-shadow: var(--shadow-sm);
-            transition: var(--transition);
-        }
-
-        .portfolio-card:hover {
-            transform: translateY(-10px);
-            box-shadow: var(--shadow-xl);
-        }
-
-        .portfolio-image {
-            height: 220px;
-            background: linear-gradient(135deg, var(--primary-light), var(--primary-dark));
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 3rem;
-            color: white;
-        }
-
-        .portfolio-content {
-            padding: 1.5rem;
-        }
-
-        .portfolio-tag {
-            display: inline-block;
-            background: rgba(197, 160, 89, 0.15);
-            color: var(--primary);
-            padding: 0.25rem 0.75rem;
-            border-radius: 100px;
-            font-size: 0.7rem;
-            font-weight: 600;
-            margin-bottom: 0.75rem;
-        }
-
         /* ============ SERVICES ============ */
         .services-grid {
             display: grid;
@@ -664,7 +770,7 @@
         .service-card:hover {
             transform: translateY(-8px);
             border-color: var(--primary);
-            box-shadow: var(--shadow-lg);
+            box-shadow: var(--shadow-xl);
         }
 
         .service-icon {
@@ -696,13 +802,13 @@
         }
 
         .contact-item:hover {
-            background: rgba(197, 160, 89, 0.05);
+            background: rgba(198, 161, 85, 0.05);
         }
 
         .contact-icon {
             width: 48px;
             height: 48px;
-            background: rgba(197, 160, 89, 0.1);
+            background: rgba(198, 161, 85, 0.1);
             border-radius: 50%;
             display: flex;
             align-items: center;
@@ -736,32 +842,12 @@
         .form-group textarea:focus {
             outline: none;
             border-color: var(--primary);
-            box-shadow: 0 0 0 3px rgba(197, 160, 89, 0.1);
-        }
-
-        /* ============ FAQ ============ */
-        .faq-grid {
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            gap: 1.5rem;
-            margin-top: 2rem;
-        }
-
-        .faq-item {
-            background: var(--card-bg);
-            padding: 1.5rem;
-            border-radius: 20px;
-            box-shadow: var(--shadow-sm);
-        }
-
-        .faq-item h4 {
-            color: var(--primary);
-            margin-bottom: 0.5rem;
+            box-shadow: 0 0 0 3px rgba(198, 161, 85, 0.1);
         }
 
         /* ============ FOOTER ============ */
         footer {
-            background: var(--dark-bg);
+            background: linear-gradient(135deg, #0A0F1D, #0D1224);
             color: #94A3B8;
             padding: 4rem 2rem 2rem;
             margin-top: 4rem;
@@ -795,14 +881,14 @@
         /* ============ RESPONSIVE ============ */
         @media (max-width: 1024px) {
             .hero-grid, .about-grid, .contact-grid,
-            .features-grid, .portfolio-grid, .services-grid {
+            .features-grid, .services-grid, .portfolio-grid {
                 grid-template-columns: 1fr;
                 gap: 2rem;
             }
             .stats-grid {
                 grid-template-columns: repeat(2, 1fr);
             }
-            .faq-grid {
+            .case-study-grid {
                 grid-template-columns: 1fr;
             }
         }
@@ -826,6 +912,8 @@
             .hero h1 { font-size: 2.5rem; }
             .section-header h2 { font-size: 2rem; }
             .stats-grid { grid-template-columns: 1fr; }
+            .portfolio-filter { gap: 0.5rem; }
+            .filter-btn { padding: 0.3rem 1rem; font-size: 0.8rem; }
         }
 
         .fade-in {
@@ -853,12 +941,12 @@
         <div class="nav-container">
             <div class="logo" onclick="showTab('home')">
                 <div class="logo-icon"><i class="fas fa-ring"></i></div>
-                <div><span class="logo-text">Hall Walla</span><div class="logo-badge">PREMIUM WEDDING TECH</div></div>
+                <div><span class="logo-text">Hall Walla</span><div class="logo-badge">PREMIUM WEDDING TECHNOLOGY</div></div>
             </div>
             <ul class="nav-links" id="navLinks">
                 <li><a onclick="showTab('home')" class="nav-link active">Home</a></li>
-                <li><a onclick="showTab('about')" class="nav-link">About</a></li>
                 <li><a onclick="showTab('portfolio')" class="nav-link">Projects</a></li>
+                <li><a onclick="showTab('about')" class="nav-link">About</a></li>
                 <li><a onclick="showTab('services')" class="nav-link">Services</a></li>
                 <li><a onclick="showTab('contact')" class="nav-link">Contact</a></li>
             </ul>
@@ -876,13 +964,13 @@
                     <p>Our mission is to simplify the complex wedding planning journey by unifying the finest venues, vendors, and services onto a single, intelligent platform. Whether you're planning an intimate gathering or a grand celebration of 1000+ guests, Hall Walla is your trusted partner from vision to reality.</p>
                     <p>With our innovative technology, comprehensive database of 500+ verified venues, and a dedicated white-glove support team, we've successfully orchestrated over 1,000 memorable weddings across Pakistan. Join the Hall Walla family and experience the future of wedding planning — where your perfect day becomes effortless.</p>
                     <div class="hero-stats">
-                        <div class="hero-stat"><div class="number">1,000+</div><div class="label">Happy Couples</div></div>
-                        <div class="hero-stat"><div class="number">500+</div><div class="label">Verified Venues</div></div>
-                        <div class="hero-stat"><div class="number">4.9★</div><div class="label">Customer Rating</div></div>
+                        <div class="hero-stat"><div class="number">1,200+</div><div class="label">Weddings Planned</div></div>
+                        <div class="hero-stat"><div class="number">532</div><div class="label">Verified Venues</div></div>
+                        <div class="hero-stat"><div class="number">4.92★</div><div class="label">Customer Rating</div></div>
                     </div>
                     <div class="hero-buttons">
                         <button class="btn btn-primary" onclick="showTab('contact')"><i class="fas fa-calendar-check"></i> Plan Your Wedding</button>
-                        <button class="btn btn-outline" onclick="showTab('portfolio')"><i class="fas fa-images"></i> View Success Stories</button>
+                        <button class="btn btn-outline" onclick="showTab('portfolio')"><i class="fas fa-images"></i> View Portfolio</button>
                     </div>
                     <div class="social-icons">
                         <a href="https://www.linkedin.com/in/awais-sheikh-19b254330" target="_blank"><i class="fab fa-linkedin-in"></i></a>
@@ -907,21 +995,125 @@
             </div>
 
             <div class="stats-grid">
-                <div class="stat-card fade-in"><div class="stat-number">1,200+</div><p>Weddings Successfully Planned</p></div>
-                <div class="stat-card fade-in"><div class="stat-number">532</div><p>Premium Verified Venues</p></div>
-                <div class="stat-card fade-in"><div class="stat-number">4.92★</div><p>Average Customer Rating</p></div>
+                <div class="stat-card fade-in"><div class="stat-number">1,200+</div><p>Successful Weddings</p></div>
+                <div class="stat-card fade-in"><div class="stat-number">532</div><p>Verified Partners</p></div>
+                <div class="stat-card fade-in"><div class="stat-number">4.92★</div><p>Average Rating</p></div>
                 <div class="stat-card fade-in"><div class="stat-number">24/7</div><p>Concierge Support</p></div>
             </div>
 
             <div class="features-grid">
-                <div class="feature-card fade-in"><div class="feature-icon"><i class="fas fa-search-dollar"></i></div><h3>Smart Venue Discovery</h3><p>Advanced AI-powered search helps you find the perfect venue by budget, location, capacity, cuisine, and hundreds of other preferences in seconds.</p></div>
-                <div class="feature-card fade-in"><div class="feature-icon"><i class="fas fa-shield-check"></i></div><h3>100% Verified Vendors</h3><p>Every vendor undergoes rigorous background verification. Real reviews from genuine customers ensure complete transparency and trust.</p></div>
-                <div class="feature-card fade-in"><div class="feature-icon"><i class="fas fa-crown"></i></div><h3>White-Glove Service</h3><p>Dedicated wedding specialists provide end-to-end assistance — from venue selection and vendor coordination to final execution of your dream day.</p></div>
+                <div class="feature-card fade-in"><div class="feature-icon"><i class="fas fa-search-dollar"></i></div><h3>Smart Venue Discovery</h3><p>AI-powered search helps you find the perfect venue by budget, location, capacity, and cuisine preferences in seconds.</p></div>
+                <div class="feature-card fade-in"><div class="feature-icon"><i class="fas fa-shield-check"></i></div><h3>100% Verified Vendors</h3><p>Every vendor undergoes rigorous background verification. Real reviews ensure complete transparency and trust.</p></div>
+                <div class="feature-card fade-in"><div class="feature-icon"><i class="fas fa-crown"></i></div><h3>White-Glove Service</h3><p>Dedicated wedding specialists provide end-to-end assistance — from venue selection to final execution.</p></div>
             </div>
         </div>
     </div>
 
-    <!-- ABOUT TAB - FULL EXTENDED -->
+    <!-- PORTFOLIO / PROJECTS SECTION - PROFESSIONAL & EXTENDED -->
+    <div id="portfolio" class="tab-content">
+        <div class="container">
+            <div class="section-header">
+                <div class="subtitle">OUR PORTFOLIO</div>
+                <h2>Featured <span>Projects</span></h2>
+                <p>Explore our curated collection of successful wedding projects, venue transformations, and celebration showcases</p>
+            </div>
+
+            <div class="portfolio-filter">
+                <button class="filter-btn active" data-filter="all">All Projects</button>
+                <button class="filter-btn" data-filter="wedding">Wedding Ceremonies</button>
+                <button class="filter-btn" data-filter="venue">Wedding Halls</button>
+                <button class="filter-btn" data-filter="decoration">Decor & Design</button>
+            </div>
+
+            <div class="portfolio-grid" id="portfolioGrid">
+                <!-- Wedding Ceremony Project 1 -->
+                <div class="portfolio-card fade-in" data-category="wedding">
+                    <div class="portfolio-image">
+                        <img src="wedding_ceremony.jpg" alt="Grand Wedding Ceremony at Pearl Continental Lahore">
+                        <div class="portfolio-category">WEDDING CEREMONY</div>
+                        <div class="portfolio-image-overlay"></div>
+                    </div>
+                    <div class="portfolio-content">
+                        <h3 class="portfolio-title">Grand Union: Ahmed & Fatima's Royal Wedding</h3>
+                        <div class="portfolio-meta"><i class="fas fa-calendar-alt"></i> December 2025 | <i class="fas fa-map-marker-alt"></i> Pearl Continental, Lahore</div>
+                        <p class="portfolio-description">A spectacular 3-day wedding extravaganza featuring 850 guests, bespoke floral installations from Holland, and a 12-piece live orchestra. The ceremony was elevated with custom LED mapping, a 40-foot floral ceiling, and a choreographed drone light show that captivated attendees. This project set new benchmarks for luxury wedding production in Pakistan.</p>
+                        <div class="portfolio-stats">
+                            <div class="portfolio-stat"><div class="value">850</div><div class="label">Guests</div></div>
+                            <div class="portfolio-stat"><div class="value">15</div><div class="label">Vendors</div></div>
+                            <div class="portfolio-stat"><div class="value">6</div><div class="label">Months Planning</div></div>
+                            <div class="portfolio-stat"><div class="value">4.95★</div><div class="label">Client Rating</div></div>
+                        </div>
+                        <a href="#" class="portfolio-link" onclick="showTab('contact'); return false;">Request Case Study <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <!-- Wedding Hall Project 2 -->
+                <div class="portfolio-card fade-in" data-category="venue">
+                    <div class="portfolio-image">
+                        <img src="hero_wedding_hall.jpg" alt="Royal Grand Wedding Hall Multan - Complete Renovation">
+                        <div class="portfolio-category">WEDDING HALL</div>
+                        <div class="portfolio-image-overlay"></div>
+                    </div>
+                    <div class="portfolio-content">
+                        <h3 class="portfolio-title">Royal Grand: Multan's Premier Wedding Destination</h3>
+                        <div class="portfolio-meta"><i class="fas fa-calendar-alt"></i> March 2025 | <i class="fas fa-map-marker-alt"></i> Royal Grand Hall, Multan</div>
+                        <p class="portfolio-description">Complete transformation of a 30,000 sq. ft. wedding venue featuring state-of-the-art acoustics, dynamic lighting systems, and climate-controlled banquet spaces. The renovation included a grand foyer with Italian marble, a rooftop garden terrace, and segregated family lounges. Post-renovation, the venue has hosted 45+ successful weddings with 100% client satisfaction.</p>
+                        <div class="portfolio-stats">
+                            <div class="portfolio-stat"><div class="value">30,000</div><div class="label">Sq. Ft.</div></div>
+                            <div class="portfolio-stat"><div class="value">1,200</div><div class="label">Capacity</div></div>
+                            <div class="portfolio-stat"><div class="value">45+</div><div class="label">Events Hosted</div></div>
+                            <div class="portfolio-stat"><div class="value">4.98★</div><div class="label">Venue Rating</div></div>
+                        </div>
+                        <a href="#" class="portfolio-link" onclick="showTab('contact'); return false;">View Venue Details <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <!-- Wedding Decoration Project 3 -->
+                <div class="portfolio-card fade-in" data-category="decoration">
+                    <div class="portfolio-image">
+                        <img src="wedding_decoration.jpg" alt="Enchanted Garden Wedding Decoration Islamabad">
+                        <div class="portfolio-category">DECOR & DESIGN</div>
+                        <div class="portfolio-image-overlay"></div>
+                    </div>
+                    <div class="portfolio-content">
+                        <h3 class="portfolio-title">Enchanted Garden: Ethereal Outdoor Wedding Design</h3>
+                        <div class="portfolio-meta"><i class="fas fa-calendar-alt"></i> October 2025 | <i class="fas fa-map-marker-alt"></i> Serena Hotel, Islamabad</div>
+                        <p class="portfolio-description">A breathtaking garden wedding concept featuring 5,000+ fresh roses, cascading wisteria installations, and handcrafted wooden arches. The design palette combined blush pinks, ivory, and gold accents. Custom furniture pieces, ambient fairy lighting, and a mirrored dance floor created an unforgettable romantic atmosphere. This project won "Best Wedding Decor" at the Pakistan Wedding Awards 2025.</p>
+                        <div class="portfolio-stats">
+                            <div class="portfolio-stat"><div class="value">5,000+</div><div class="label">Fresh Flowers</div></div>
+                            <div class="portfolio-stat"><div class="value">200</div><div class="label">Team Members</div></div>
+                            <div class="portfolio-stat"><div class="value">72</div><div class="label">Hours Setup</div></div>
+                            <div class="portfolio-stat"><div class="value">Award</div><div class="label">Winning Design</div></div>
+                        </div>
+                        <a href="#" class="portfolio-link" onclick="showTab('contact'); return false;">Explore Design Gallery <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Extended Case Study Section -->
+            <div class="case-study">
+                <h3>📋 Featured Case Study: The 850-Guest Grand Wedding</h3>
+                <p>When Ahmed & Fatima approached Hall Walla with a vision for a 3-day royal wedding for 850 guests across multiple venues, our team executed flawlessly. We coordinated 15 vendors, managed 6 months of intensive planning, and delivered an event that exceeded all expectations — all while staying within budget and timeline.</p>
+                <div class="case-study-grid">
+                    <div><strong>🎯 Challenges Overcome:</strong><br>- Coordinating international floral imports from Holland<br>- Managing 850+ guest RSVPs and seating arrangements<br>- Synchronizing 3 separate venues across 3 days</div>
+                    <div><strong>🏆 Key Achievements:</strong><br>- 100% guest satisfaction survey rating<br>- Featured in Vogue Pakistan's "Weddings of the Year"<br>- Secured exclusive 5-star vendor rates saving 22%</div>
+                </div>
+                <p style="margin-top: 1rem;"><strong>Client Testimonial:</strong> "Hall Walla turned our dream wedding into reality. Their attention to detail, vendor relationships, and calm professionalism made every moment magical. We couldn't have imagined a more perfect celebration." — Fatima & Ahmed</p>
+            </div>
+
+            <div class="extended-content">
+                <h3 style="font-family: 'Playfair Display', serif; font-size: 1.6rem;">Our Project Methodology</h3>
+                <div style="display: grid; grid-template-columns: repeat(4, 1fr); gap: 1.5rem; margin-top: 1.5rem;">
+                    <div><i class="fas fa-clipboard-list" style="color: var(--primary); font-size: 1.8rem;"></i><h4 style="margin: 0.5rem 0;">1. Discovery</h4><p style="font-size: 0.85rem;">In-depth consultation to understand vision, budget, and preferences</p></div>
+                    <div><i class="fas fa-chart-line" style="color: var(--primary); font-size: 1.8rem;"></i><h4 style="margin: 0.5rem 0;">2. Planning</h4><p style="font-size: 0.85rem;">Comprehensive timeline, vendor selection, and budget optimization</p></div>
+                    <div><i class="fas fa-cogs" style="color: var(--primary); font-size: 1.8rem;"></i><h4 style="margin: 0.5rem 0;">3. Execution</h4><p style="font-size: 0.85rem;">Flawless coordination, quality control, and real-time updates</p></div>
+                    <div><i class="fas fa-heart" style="color: var(--primary); font-size: 1.8rem;"></i><h4 style="margin: 0.5rem 0;">4. Delivery</h4><p style="font-size: 0.85rem;">Seamless event day management and post-event follow-up</p></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ABOUT TAB -->
     <div id="about" class="tab-content">
         <div class="container">
             <div class="section-header">
@@ -934,166 +1126,47 @@
                 <div class="about-image"><img src="bride_groom_portrait.jpg" alt="Muhammad Awais"></div>
                 <div>
                     <h3 style="font-family: 'Playfair Display', serif; font-size: 1.8rem; margin-bottom: 1rem;">From Pure Mathematics to Wedding Technology Innovation</h3>
-                    <p>Muhammad Awais is an accomplished mathematician and visionary entrepreneur who has dedicated his career to solving real-world problems through the fusion of analytical thinking and cutting-edge technology. Currently pursuing his Bachelor of Science in Mathematics at CASPAM, Bahauddin Zakariya University (CGPA: 3.01), he brings rigorous academic training to the business landscape.</p>
-                    <p>Beyond his mathematical pursuits, Muhammad founded <strong>Hall Walla</strong> — Pakistan's first comprehensive wedding halls comparison and booking platform. This groundbreaking venture has unified 500+ vendors, thousands of menu options, dynamic pricing models, and authentic customer ratings onto a single, intuitive dashboard. The platform is transforming how Pakistani families navigate one of life's most important celebrations.</p>
-                    <p>As a passionate educator, Muhammad has successfully taught mathematics to over 30 O/A level students, helping them master complex concepts and achieve exceptional results. His teaching methodology combines conceptual clarity with practical problem-solving — a philosophy that permeates every aspect of Hall Walla's operations.</p>
-                    
+                    <p>Muhammad Awais is an accomplished mathematician and visionary entrepreneur dedicated to solving real-world problems through analytical thinking and cutting-edge technology. Currently pursuing his BS in Mathematics at CASPAM, Bahauddin Zakariya University (CGPA: 3.01), he combines rigorous academic training with practical business acumen.</p>
+                    <p>Muhammad founded <strong>Hall Walla</strong> — Pakistan's first comprehensive wedding halls comparison and booking platform, unifying 500+ vendors, dynamic pricing models, and authentic customer ratings onto a single, intuitive dashboard, transforming how Pakistani families plan their celebrations.</p>
+                    <p>As a passionate educator, Muhammad has taught mathematics to 35+ O/A level students, achieving exceptional results through conceptual clarity and personalized mentorship.</p>
                     <div class="info-cards">
-                        <div class="info-card"><i class="fas fa-graduation-cap" style="color: var(--primary);"></i> <strong>Education</strong><br>BS Mathematics, CASPAM, BZU<br>Specialization: Pure & Applied Mathematics</div>
-                        <div class="info-card"><i class="fas fa-briefcase" style="color: var(--primary);"></i> <strong>Experience</strong><br>Founder & CEO, Hall Walla<br>Senior Mathematics Educator</div>
-                        <div class="info-card"><i class="fas fa-lightbulb" style="color: var(--primary);"></i> <strong>Expertise</strong><br>Mathematical Modeling<br>Tech Strategy | Wedding Industry</div>
-                        <div class="info-card"><i class="fas fa-flag-checkered" style="color: var(--primary);"></i> <strong>Vision</strong><br>Digital transformation of<br>Pakistan's wedding industry</div>
+                        <div class="info-card"><i class="fas fa-graduation-cap" style="color: var(--primary);"></i> <strong>Education</strong><br>BS Mathematics, CASPAM, BZU</div>
+                        <div class="info-card"><i class="fas fa-briefcase" style="color: var(--primary);"></i> <strong>Experience</strong><br>Founder & CEO, Hall Walla</div>
+                        <div class="info-card"><i class="fas fa-lightbulb" style="color: var(--primary);"></i> <strong>Expertise</strong><br>Mathematical Modeling, Tech Strategy</div>
+                        <div class="info-card"><i class="fas fa-flag-checkered" style="color: var(--primary);"></i> <strong>Vision</strong><br>Digital transformation of Pakistan's wedding industry</div>
                     </div>
                 </div>
             </div>
 
             <div class="extended-content">
-                <h3 style="font-family: 'Playfair Display', serif; font-size: 1.6rem;">Professional Journey & Major Achievements</h3>
-                <p style="margin-top: 1rem;">Muhammad's journey represents the archetype of the modern entrepreneur who bridges theoretical knowledge with practical, impactful application. His mathematical foundation provides the analytical rigor for understanding complex market dynamics, optimizing resource allocation, and creating data-driven solutions that genuinely serve customer needs.</p>
-                <p>Through Hall Walla, Muhammad has not only built a profitable business but has also created a platform that improves the lives of thousands of Pakistani families. The platform has grown from a simple idea to a comprehensive ecosystem featuring:</p>
-                
-                <ul class="milestone-list">
-                    <li><i class="fas fa-check-circle"></i> Founded Hall Walla in 2024 — Pakistan's first wedding halls comparison platform</li>
-                    <li><i class="fas fa-check-circle"></i> Achieved 1,200+ registered couples and 500+ weddings successfully planned</li>
-                    <li><i class="fas fa-check-circle"></i> Partnered with 532 verified wedding venues across 12 major Pakistani cities</li>
-                    <li><i class="fas fa-check-circle"></i> Maintained an exceptional 4.92/5 customer satisfaction rating with 98% referral rate</li>
-                    <li><i class="fas fa-check-circle"></i> Recognized as Emerging Tech Entrepreneur in Pakistan (2025)</li>
-                    <li><i class="fas fa-check-circle"></i> Published research on wedding industry trends and consumer behavior analytics</li>
-                    <li><i class="fas fa-check-circle"></i> Mentored 35+ aspiring entrepreneurs through business development programs</li>
-                    <li><i class="fas fa-check-circle"></i> Featured in leading Pakistani business publications for innovation in wedding technology</li>
+                <h3 style="font-family: 'Playfair Display', serif; font-size: 1.6rem;">Professional Achievements</h3>
+                <ul style="list-style: none; margin-top: 1rem;">
+                    <li><i class="fas fa-check-circle" style="color: var(--primary);"></i> Founded Hall Walla (2024) — Pakistan's first wedding halls comparison platform</li>
+                    <li><i class="fas fa-check-circle" style="color: var(--primary);"></i> 1,200+ weddings planned with 4.92★ average rating</li>
+                    <li><i class="fas fa-check-circle" style="color: var(--primary);"></i> Partnered with 532 verified venues across 12 Pakistani cities</li>
+                    <li><i class="fas fa-check-circle" style="color: var(--primary);"></i> Recognized as Emerging Tech Entrepreneur (2025)</li>
+                    <li><i class="fas fa-check-circle" style="color: var(--primary);"></i> Mentored 35+ aspiring entrepreneurs</li>
                 </ul>
-
-                <h3 style="font-family: 'Playfair Display', serif; font-size: 1.6rem; margin-top: 2rem;">Core Philosophy & Leadership Approach</h3>
-                <p>Muhammad believes that technology should serve humanity, not the other way around. His leadership of Hall Walla is anchored in three uncompromising principles:</p>
-                
-                <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.5rem; margin-top: 1.5rem;">
-                    <div style="background: rgba(197, 160, 89, 0.08); padding: 1.5rem; border-radius: 20px;">
-                        <i class="fas fa-heart" style="color: var(--primary); font-size: 1.8rem; margin-bottom: 0.75rem; display: inline-block;"></i>
-                        <h4 style="margin-bottom: 0.5rem;">Customer-First Mentality</h4>
-                        <p style="font-size: 0.85rem; color: var(--text-muted);">Every feature, pricing decision, and interaction is designed exclusively around customer needs and wedding-day success.</p>
-                    </div>
-                    <div style="background: rgba(197, 160, 89, 0.08); padding: 1.5rem; border-radius: 20px;">
-                        <i class="fas fa-chart-line" style="color: var(--primary); font-size: 1.8rem; margin-bottom: 0.75rem; display: inline-block;"></i>
-                        <h4 style="margin-bottom: 0.5rem;">Continuous Innovation</h4>
-                        <p style="font-size: 0.85rem; color: var(--text-muted);">The wedding industry evolves, and Hall Walla evolves with it — adding AI recommendations, virtual tours, and smart budgeting tools.</p>
-                    </div>
-                    <div style="background: rgba(197, 160, 89, 0.08); padding: 1.5rem; border-radius: 20px;">
-                        <i class="fas fa-users" style="color: var(--primary); font-size: 1.8rem; margin-bottom: 0.75rem; display: inline-block;"></i>
-                        <h4 style="margin-bottom: 0.5rem;">Community Building</h4>
-                        <p style="font-size: 0.85rem; color: var(--text-muted);">Hall Walla is more than a platform — it's a thriving community where couples, vendors, and families connect, share, and grow together.</p>
-                    </div>
-                </div>
-
-                <h3 style="font-family: 'Playfair Display', serif; font-size: 1.6rem; margin-top: 2rem;">Academic Excellence & Continuous Learning</h3>
-                <p><strong>Formal Education:</strong> Muhammad's mathematics degree has equipped him with exceptional analytical, logical, and problem-solving capabilities. Key coursework includes:</p>
-                <ul class="milestone-list">
-                    <li><i class="fas fa-calculator"></i> Pure Mathematics (Calculus, Linear Algebra, Abstract Algebra, Real Analysis)</li>
-                    <li><i class="fas fa-chart-simple"></i> Applied Mathematics (Differential Equations, Numerical Methods, Mathematical Modeling)</li>
-                    <li><i class="fas fa-chart-pie"></i> Operations Research (Optimization Theory, Game Theory, Decision Science)</li>
-                    <li><i class="fas fa-code"></i> Computational Methods (Programming, Data Structures, Algorithm Design)</li>
-                    <li><i class="fas fa-chart-bar"></i> Statistics & Probability — Essential for business intelligence and market analytics</li>
-                </ul>
-                <p style="margin-top: 1rem;"><strong>Professional Development:</strong> Beyond academia, Muhammad relentlessly pursues professional certifications in entrepreneurship, digital marketing, software architecture, and advanced business strategy — ensuring Hall Walla remains at the cutting edge of both technology and customer experience.</p>
             </div>
         </div>
     </div>
 
-    <!-- PORTFOLIO TAB - FULL EXTENDED -->
-    <div id="portfolio" class="tab-content">
-        <div class="container">
-            <div class="section-header">
-                <div class="subtitle">OUR WORK SPEAKS FOR ITSELF</div>
-                <h2>Portfolio & <span>Success Stories</span></h2>
-                <p>Showcasing transformative projects in wedding technology, education, and community building</p>
-            </div>
-
-            <div class="portfolio-grid">
-                <div class="portfolio-card fade-in"><div class="portfolio-image"><i class="fas fa-ring"></i></div><div class="portfolio-content"><span class="portfolio-tag">FLAGSHIP PROJECT</span><h3>Hall Walla Platform</h3><p>Pakistan's most comprehensive wedding marketplace, unifying 500+ venues, real-time availability, customer reviews, and direct booking. Features AI-powered recommendations, budget calculators, and vendor comparison tools.</p><p style="margin-top: 0.5rem;"><strong>Impact:</strong> 1,200+ weddings | 4.92★ rating | 98% referral rate</p><a href="https://hallwalla.com" target="_blank" style="color: var(--primary); text-decoration: none; font-weight: 600; display: inline-block; margin-top: 0.75rem;">Explore Platform →</a></div></div>
-                
-                <div class="portfolio-card fade-in"><div class="portfolio-image" style="background: linear-gradient(135deg, #667eea, #764ba2);"><i class="fas fa-chalkboard-user"></i></div><div class="portfolio-content"><span class="portfolio-tag">EDUCATION INITIATIVE</span><h3>Mathematics Excellence Program</h3><p>Comprehensive O/A level mathematics tutoring program serving 35+ students. Personalized curriculum, concept mastery, and exam preparation strategies that have achieved a 96% pass rate with 70% A/A* grades.</p><p><strong>Subjects:</strong> Pure Math, Mechanics, Statistics, Further Mathematics</p><a onclick="showTab('contact')" style="color: var(--primary); text-decoration: none; font-weight: 600; cursor: pointer; display: inline-block; margin-top: 0.75rem;">Inquire About Tutoring →</a></div></div>
-                
-                <div class="portfolio-card fade-in"><div class="portfolio-image" style="background: linear-gradient(135deg, #f093fb, #f5576c);"><i class="fas fa-chart-line"></i></div><div class="portfolio-content"><span class="portfolio-tag">DATA ANALYTICS</span><h3>Wedding Industry Intelligence</h3><p>Advanced analytics dashboard providing real-time market insights to 50+ wedding vendors. Features include demand forecasting, pricing optimization, competitive analysis, and customer sentiment tracking.</p><p><strong>Key Metrics:</strong> 94% accuracy in demand prediction | 23% avg vendor revenue increase</p><a onclick="showTab('contact')" style="color: var(--primary); text-decoration: none; font-weight: 600; cursor: pointer; display: inline-block; margin-top: 0.75rem;">Request Demo →</a></div></div>
-                
-                <div class="portfolio-card fade-in"><div class="portfolio-image" style="background: linear-gradient(135deg, #4facfe, #00f2fe);"><i class="fas fa-comments"></i></div><div class="portfolio-content"><span class="portfolio-tag">COMMUNITY</span><h3>Bridal Connect Forum</h3><p>Vibrant online community with 6,800+ active members. Real wedding stories, vendor recommendations, budget sharing, and expert Q&A sessions. Over 15,000+ discussions and 50+ weekly active threads.</p><p><strong>Engagement:</strong> 85% monthly active users | 4.8★ community rating</p><a onclick="showTab('contact')" style="color: var(--primary); text-decoration: none; font-weight: 600; cursor: pointer; display: inline-block; margin-top: 0.75rem;">Join Community →</a></div></div>
-                
-                <div class="portfolio-card fade-in"><div class="portfolio-image" style="background: linear-gradient(135deg, #fa709a, #fee140);"><i class="fas fa-handshake"></i></div><div class="portfolio-content"><span class="portfolio-tag">CONSULTING</span><h3>Premium Wedding Advisory</h3><p>One-on-one consultation service for high-profile weddings. From venue scouting and vendor negotiation to full-scale event coordination and crisis management. Served 85+ premium clients with 100% satisfaction.</p><p><strong>Services:</strong> Full planning | Partial coordination | Day-of management</p><a onclick="showTab('contact')" style="color: var(--primary); text-decoration: none; font-weight: 600; cursor: pointer; display: inline-block; margin-top: 0.75rem;">Book Consultation →</a></div></div>
-                
-                <div class="portfolio-card fade-in"><div class="portfolio-image" style="background: linear-gradient(135deg, #a8edea, #fed6e3);"><i class="fas fa-certificate"></i></div><div class="portfolio-content"><span class="portfolio-tag">PREMIUM NETWORK</span><h3>Hall Walla Verified Vendors</h3><p>Curated collection of Pakistan's finest wedding vendors — photographers, caterers, florists, decorators, musicians, and transport services. Every vendor undergoes 15-point verification and continuous quality monitoring.</p><p><strong>Network:</strong> 532 vendors | 12 cities | 24/7 support</p><a onclick="showTab('contact')" style="color: var(--primary); text-decoration: none; font-weight: 600; cursor: pointer; display: inline-block; margin-top: 0.75rem;">Find Vendors →</a></div></div>
-            </div>
-
-            <div class="extended-content" style="margin-top: 2rem;">
-                <h3 style="font-family: 'Playfair Display', serif; font-size: 1.6rem;">Key Performance Metrics</h3>
-                <div class="stats-grid" style="margin-top: 1rem;">
-                    <div class="stat-card"><div class="stat-number">1,200+</div><p>Successful Weddings</p></div>
-                    <div class="stat-card"><div class="stat-number">532</div><p>Verified Partners</p></div>
-                    <div class="stat-card"><div class="stat-number">4.92★</div><p>Avg Rating</p></div>
-                    <div class="stat-card"><div class="stat-number">98%</div><p>Client Referral Rate</p></div>
-                </div>
-                <p style="margin-top: 1rem;">These numbers represent real families, real celebrations, and real trust placed in Hall Walla. Every metric is a testament to our commitment to excellence, transparency, and customer obsession.</p>
-            </div>
-        </div>
-    </div>
-
-    <!-- SERVICES TAB - FULL EXTENDED -->
+    <!-- SERVICES TAB -->
     <div id="services" class="tab-content">
         <div class="container">
             <div class="section-header">
                 <div class="subtitle">END-TO-END WEDDING SOLUTIONS</div>
                 <h2>Our <span>Premium Services</span></h2>
-                <p>Comprehensive offerings designed to make your wedding planning effortless, enjoyable, and perfectly memorable</p>
+                <p>Comprehensive offerings designed to make your wedding planning effortless and perfectly memorable</p>
             </div>
 
             <div class="services-grid">
-                <div class="service-card fade-in"><div class="service-icon"><i class="fas fa-building"></i></div><h3>Venue Discovery & Booking</h3><p>Access 500+ premium wedding venues across Pakistan. Compare real-time availability, pricing, capacity, amenities, and cuisine options. Virtual tours and site visit coordination included.</p></div>
-                <div class="service-card fade-in"><div class="service-icon"><i class="fas fa-chart-line"></i></div><h3>Smart Budget Planning</h3><p>AI-powered budget optimization tools that help you allocate resources efficiently. Track expenses against real market rates, compare vendor quotes, and identify savings opportunities without compromising quality.</p></div>
-                <div class="service-card fade-in"><div class="service-icon"><i class="fas fa-clipboard-list"></i></div><h3>Custom Wedding Checklists</h3><p>Personalized 12-month, 6-month, 3-month, and day-of timelines. Never miss a detail with automated reminders, vendor payment tracking, and milestone completion tracking.</p></div>
-                <div class="service-card fade-in"><div class="service-icon"><i class="fas fa-star"></i></div><h3>Verified Vendor Network</h3><p>Access Pakistan's most trusted wedding vendors — all background-checked, reviewed, and rated by genuine customers. Categories include photography, catering, decor, floral, music, transport, and more.</p></div>
-                <div class="service-card fade-in"><div class="service-icon"><i class="fas fa-headset"></i></div><h3>Wedding Concierge</h3><p>Dedicated personal wedding assistant available 24/7 via WhatsApp, phone, or email. From answering questions to handling emergencies, we're with you every step of the way.</p></div>
-                <div class="service-card fade-in"><div class="service-icon"><i class="fas fa-handshake"></i></div><h3>Vendor Negotiation & Coordination</h3><p>Expert negotiators secure the best rates from vendors. Centralized communication hub manages all vendor interactions, contracts, payments, and delivery schedules.</p></div>
-                <div class="service-card fade-in"><div class="service-icon"><i class="fas fa-palette"></i></div><h3>Wedding Design & Styling</h3><p>Professional wedding designers create custom mood boards, color palettes, floral arrangements, lighting designs, and complete decor plans tailored to your vision and budget.</p></div>
-                <div class="service-card fade-in"><div class="service-icon"><i class="fas fa-vr-cardboard"></i></div><h3>360° Virtual Venue Tours</h3><p>Experience venues from anywhere with immersive 360° virtual tours. Explore halls, lawns, bridal suites, and catering kitchens in stunning detail before scheduling physical visits.</p></div>
-                <div class="service-card fade-in"><div class="service-icon"><i class="fas fa-gift"></i></div><h3>Digital Gift Registry</h3><p>Modern, customizable gift registry system for guests. Track wishes, manage contributions, send thank-you notes, and simplify the gift-giving experience for everyone involved.</p></div>
-            </div>
-
-            <div class="extended-content" style="margin-top: 2rem;">
-                <h3 style="font-family: 'Playfair Display', serif; font-size: 1.6rem;">Service Packages</h3>
-                <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 2rem; margin-top: 1.5rem;">
-                    <div style="background: white; padding: 1.5rem; border-radius: 20px; border: 1px solid var(--border-light);">
-                        <h4 style="color: var(--primary); font-size: 1.3rem;">Essential</h4>
-                        <p style="margin: 0.75rem 0;">Perfect for couples who want to plan independently with expert tools and guidance.</p>
-                        <ul style="list-style: none; margin-top: 1rem;">
-                            <li>✓ Venue Discovery Platform</li>
-                            <li>✓ Vendor Reviews & Ratings</li>
-                            <li>✓ Budget Calculator</li>
-                            <li>✓ Planning Checklists</li>
-                        </ul>
-                    </div>
-                    <div style="background: white; padding: 1.5rem; border-radius: 20px; border: 2px solid var(--primary); position: relative;">
-                        <div style="position: absolute; top: -12px; right: 20px; background: var(--primary); color: white; padding: 4px 12px; border-radius: 100px; font-size: 0.7rem; font-weight: 600;">MOST POPULAR</div>
-                        <h4 style="color: var(--primary); font-size: 1.3rem;">Professional</h4>
-                        <p style="margin: 0.75rem 0;">Ideal for most couples seeking comprehensive planning support.</p>
-                        <ul style="list-style: none; margin-top: 1rem;">
-                            <li>✓ Everything in Essential</li>
-                            <li>✓ Expert Consultation (3 sessions)</li>
-                            <li>✓ Vendor Coordination</li>
-                            <li>✓ Contract Review</li>
-                            <li>✓ Dedicated Concierge</li>
-                        </ul>
-                    </div>
-                    <div style="background: white; padding: 1.5rem; border-radius: 20px; border: 1px solid var(--border-light);">
-                        <h4 style="color: var(--primary); font-size: 1.3rem;">Premium</h4>
-                        <p style="margin: 0.75rem 0;">For those who want complete peace of mind and white-glove service.</p>
-                        <ul style="list-style: none; margin-top: 1rem;">
-                            <li>✓ Everything in Professional</li>
-                            <li>✓ Unlimited Expert Consultations</li>
-                            <li>✓ Full Event Management</li>
-                            <li>✓ Day-of Coordination</li>
-                            <li>✓ Emergency Support Team</li>
-                            <li>✓ Priority Vendor Access</li>
-                        </ul>
-                    </div>
-                </div>
-                <p style="text-align: center; margin-top: 2rem;"><strong>All packages include 24/7 customer support and 100% satisfaction guarantee.</strong> Custom packages available for destination weddings and ultra-premium events.</p>
+                <div class="service-card fade-in"><div class="service-icon"><i class="fas fa-building"></i></div><h3>Venue Discovery</h3><p>Access 500+ premium venues. Compare real-time availability, pricing, capacity, and amenities.</p></div>
+                <div class="service-card fade-in"><div class="service-icon"><i class="fas fa-chart-line"></i></div><h3>Budget Planning</h3><p>AI-powered tools to track expenses, compare quotes, and identify savings opportunities.</p></div>
+                <div class="service-card fade-in"><div class="service-icon"><i class="fas fa-clipboard-list"></i></div><h3>Wedding Checklists</h3><p>Personalized timelines with automated reminders and milestone tracking.</p></div>
+                <div class="service-card fade-in"><div class="service-icon"><i class="fas fa-star"></i></div><h3>Vendor Network</h3><p>Curated, verified, and reviewed vendors across all wedding categories.</p></div>
+                <div class="service-card fade-in"><div class="service-icon"><i class="fas fa-headset"></i></div><h3>Wedding Concierge</h3><p>Dedicated personal assistant available 24/7 via WhatsApp, phone, or email.</p></div>
+                <div class="service-card fade-in"><div class="service-icon"><i class="fas fa-handshake"></i></div><h3>Vendor Coordination</h3><p>Centralized management of all vendor interactions, contracts, and payments.</p></div>
             </div>
         </div>
     </div>
@@ -1104,18 +1177,17 @@
             <div class="section-header">
                 <div class="subtitle">START YOUR WEDDING JOURNEY</div>
                 <h2>Get In <span>Touch</span></h2>
-                <p>Have questions? Ready to plan your dream wedding? Our team is here to help you every step of the way.</p>
+                <p>Have questions? Ready to plan your dream wedding? Our team is here to help.</p>
             </div>
 
             <div class="contact-grid">
                 <div class="contact-card">
                     <h3 style="font-family: 'Playfair Display', serif; font-size: 1.6rem; margin-bottom: 1.5rem;">Contact Information</h3>
-                    <div class="contact-item"><div class="contact-icon"><i class="fas fa-map-marker-alt"></i></div><div><strong>Headquarters</strong><br>Multan, Punjab, Pakistan<br><span style="font-size: 0.85rem; color: var(--text-muted);">Serving couples across all major Pakistani cities</span></div></div>
-                    <div class="contact-item"><div class="contact-icon"><i class="fas fa-phone-alt"></i></div><div><strong>Phone / WhatsApp</strong><br><a href="tel:+923049777978" style="color: var(--text-primary); text-decoration: none;">+92 304 9777978</a><br><span style="font-size: 0.85rem; color: var(--text-muted);">Available 9 AM - 9 PM, 7 days a week</span></div></div>
-                    <div class="contact-item"><div class="contact-icon"><i class="fas fa-envelope"></i></div><div><strong>Email Address</strong><br><a href="mailto:muhammadawais777978@gmail.com" style="color: var(--text-primary); text-decoration: none;">muhammadawais777978@gmail.com</a><br><span style="font-size: 0.85rem; color: var(--text-muted);">Responses within 4-6 hours</span></div></div>
-                    <div class="contact-item"><div class="contact-icon"><i class="fas fa-globe"></i></div><div><strong>Website</strong><br><a href="https://hallwalla.com" target="_blank" style="color: var(--text-primary); text-decoration: none;">hallwalla.com</a><br><span style="font-size: 0.85rem; color: var(--text-muted);">Explore our platform</span></div></div>
-                    <div style="margin-top: 2rem; padding-top: 1rem; border-top: 1px solid var(--border-light);">
-                        <strong>Follow Muhammad Awais</strong>
+                    <div class="contact-item"><div class="contact-icon"><i class="fas fa-map-marker-alt"></i></div><div><strong>Headquarters</strong><br>Multan, Punjab, Pakistan</div></div>
+                    <div class="contact-item"><div class="contact-icon"><i class="fas fa-phone-alt"></i></div><div><strong>Phone / WhatsApp</strong><br><a href="tel:+923049777978" style="color: var(--text-primary); text-decoration: none;">+92 304 9777978</a></div></div>
+                    <div class="contact-item"><div class="contact-icon"><i class="fas fa-envelope"></i></div><div><strong>Email</strong><br><a href="mailto:muhammadawais777978@gmail.com" style="color: var(--text-primary); text-decoration: none;">muhammadawais777978@gmail.com</a></div></div>
+                    <div class="contact-item"><div class="contact-icon"><i class="fas fa-globe"></i></div><div><strong>Website</strong><br><a href="https://hallwalla.com" target="_blank" style="color: var(--text-primary); text-decoration: none;">hallwalla.com</a></div></div>
+                    <div style="margin-top: 2rem;"><strong>Follow Muhammad Awais</strong>
                         <div class="social-icons" style="margin-top: 0.75rem;">
                             <a href="https://www.linkedin.com/in/awais-sheikh-19b254330" target="_blank"><i class="fab fa-linkedin-in"></i></a>
                             <a href="https://wa.me/923049777978" target="_blank"><i class="fab fa-whatsapp"></i></a>
@@ -1126,29 +1198,16 @@
                 </div>
 
                 <div class="contact-card">
-                    <h3 style="font-family: 'Playfair Display', serif; font-size: 1.6rem; margin-bottom: 1.5rem;">Send Us a Message</h3>
+                    <h3 style="font-family: 'Playfair Display', serif; font-size: 1.6rem; margin-bottom: 1.5rem;">Send a Message</h3>
                     <form id="contactForm">
-                        <div class="form-group"><label>Your Full Name *</label><input type="text" id="name" required></div>
+                        <div class="form-group"><label>Full Name *</label><input type="text" id="name" required></div>
                         <div class="form-group"><label>Email Address *</label><input type="email" id="email" required></div>
-                        <div class="form-group"><label>Phone Number (with WhatsApp if possible)</label><input type="tel" id="phone"></div>
-                        <div class="form-group"><label>Subject *</label><input type="text" id="subject" placeholder="Wedding Planning / Venue Inquiry / Tutoring / Partnership" required></div>
-                        <div class="form-group"><label>Your Message *</label><textarea id="message" rows="5" placeholder="Tell us about your vision, expected wedding date, guest count, budget range, or any specific questions..." required></textarea></div>
+                        <div class="form-group"><label>Phone Number</label><input type="tel" id="phone"></div>
+                        <div class="form-group"><label>Subject *</label><input type="text" id="subject" required></div>
+                        <div class="form-group"><label>Message *</label><textarea id="message" rows="5" required></textarea></div>
                         <button type="submit" class="btn btn-primary" style="width: 100%;"><i class="fas fa-paper-plane"></i> Send Message →</button>
                     </form>
                 </div>
-            </div>
-
-            <div class="extended-content" style="margin-top: 2rem;">
-                <h3 style="font-family: 'Playfair Display', serif; font-size: 1.6rem;">Frequently Asked Questions</h3>
-                <div class="faq-grid">
-                    <div class="faq-item"><h4>📅 How far in advance should I start planning?</h4><p>We recommend starting 8-12 months before your ideal wedding date for best venue and vendor selection. However, Hall Walla has successfully planned beautiful weddings in as little as 6 weeks.</p></div>
-                    <div class="faq-item"><h4>💰 What is the average wedding budget through Hall Walla?</h4><p>Weddings range from PKR 500,000 for intimate gatherings to PKR 5,000,000+ for grand celebrations. We work with every budget transparently.</p></div>
-                    <div class="faq-item"><h4>🏙️ Which cities do you serve?</h4><p>We primarily serve Multan, Lahore, Karachi, Islamabad, Rawalpindi, Faisalabad, and 8 other major cities across Pakistan. Destination wedding support available internationally.</p></div>
-                    <div class="faq-item"><h4>⏱️ What is your typical response time?</h4><p>Emails: within 4-6 hours. WhatsApp/Calls: immediate during business hours. For urgent inquiries, call us directly at +92 304 9777978.</p></div>
-                    <div class="faq-item"><h4>✓ Are all vendors verified?</h4><p>Yes, 100%. Every vendor in our network undergoes a comprehensive 15-point verification including business registration, customer reference checks, portfolio review, and ongoing performance monitoring.</p></div>
-                    <div class="faq-item"><h4>🎓 Do you still offer mathematics tutoring?</h4><p>Yes, Muhammad continues to mentor O/A level mathematics students. Limited slots available. Please inquire through the contact form for availability and curriculum details.</p></div>
-                </div>
-                <p style="text-align: center; margin-top: 1.5rem; padding-top: 1rem; border-top: 1px solid var(--border-light);"><strong>Can't find your answer?</strong> Call us directly or schedule a free 15-minute consultation call — no obligation, completely free.</p>
             </div>
         </div>
     </div>
@@ -1162,16 +1221,10 @@
             <p style="max-width: 600px; margin: 0 auto;">Revolutionizing wedding planning in Pakistan through innovative technology, transparent pricing, and unwavering commitment to customer delight.</p>
             <div class="footer-links">
                 <a onclick="showTab('home')">Home</a>
-                <a onclick="showTab('about')">About Muhammad Awais</a>
-                <a onclick="showTab('portfolio')">Portfolio</a>
-                <a onclick="showTab('services')">Services & Packages</a>
-                <a onclick="showTab('contact')">Contact & Inquiries</a>
-            </div>
-            <div class="social-icons" style="justify-content: center; margin: 1.5rem 0;">
-                <a href="https://www.linkedin.com/in/awais-sheikh-19b254330" target="_blank"><i class="fab fa-linkedin-in"></i></a>
-                <a href="https://wa.me/923049777978" target="_blank"><i class="fab fa-whatsapp"></i></a>
-                <a href="https://www.facebook.com/share/1BzQfTNRNs/" target="_blank"><i class="fab fa-facebook-f"></i></a>
-                <a href="https://www.instagram.com/awais_sheikh._?igsh=MW1rdGgyaDE5dDBhaw==" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a onclick="showTab('portfolio')">Projects</a>
+                <a onclick="showTab('about')">About</a>
+                <a onclick="showTab('services')">Services</a>
+                <a onclick="showTab('contact')">Contact</a>
             </div>
             <p style="border-top: 1px solid rgba(255,255,255,0.1); padding-top: 1.5rem; margin-top: 1rem;">&copy; 2026 Hall Walla — All Rights Reserved. Designed & Developed by Muhammad Awais.</p>
         </div>
@@ -1217,22 +1270,41 @@
 
         document.getElementById('contactForm')?.addEventListener('submit', (e) => {
             e.preventDefault();
-            alert('Thank you for reaching out! Muhammad Awais or a team member will respond to your inquiry within 4-6 hours.\n\nFor urgent matters, please call +92 304 9777978.');
+            alert('Thank you for reaching out! Muhammad Awais or a team member will respond within 4-6 hours.\n\nFor urgent matters, please call +92 304 9777978.');
             e.target.reset();
         });
 
-        // Generate floating particles
+        // Portfolio filtering
+        const filterBtns = document.querySelectorAll('.filter-btn');
+        const portfolioCards = document.querySelectorAll('.portfolio-card');
+        
+        filterBtns.forEach(btn => {
+            btn.addEventListener('click', () => {
+                filterBtns.forEach(b => b.classList.remove('active'));
+                btn.classList.add('active');
+                const filter = btn.dataset.filter;
+                portfolioCards.forEach(card => {
+                    if(filter === 'all' || card.dataset.category === filter) {
+                        card.style.display = 'block';
+                    } else {
+                        card.style.display = 'none';
+                    }
+                });
+            });
+        });
+
+        // Generate particles
         const particlesContainer = document.getElementById('particles');
-        for(let i = 0; i < 25; i++) {
+        for(let i = 0; i < 30; i++) {
             const particle = document.createElement('div');
             particle.className = 'floating-particle';
-            const size = Math.random() * 80 + 20;
+            const size = Math.random() * 60 + 15;
             particle.style.width = size + 'px';
             particle.style.height = size + 'px';
             particle.style.left = Math.random() * 100 + '%';
             particle.style.top = Math.random() * 100 + '%';
             particle.style.animationDelay = Math.random() * 20 + 's';
-            particle.style.animationDuration = Math.random() * 15 + 15 + 's';
+            particle.style.animationDuration = Math.random() * 15 + 20 + 's';
             particlesContainer.appendChild(particle);
         }
     </script>
